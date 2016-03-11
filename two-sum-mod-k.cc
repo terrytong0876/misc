@@ -59,5 +59,5 @@ int main()
   test({ -2, 1, 4 }, 1);
   test({ -2, 1, 4 }, 2);
 
-	return 0;
+  return 0;
 }
