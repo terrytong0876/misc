@@ -1,3 +1,11 @@
+#include <algorithm>
+#include <iostream>
+#include <unordered_map>
+#include <unordered_set>
+#include <vector>
+
+using namespace std;
+
 class Solution {
 public:
   int twoSumModK(vector<int>& nums, int k) {
@@ -34,3 +42,22 @@ public:
     return result;
   }
 };
+
+int main()
+{
+  Solution solution;
+  auto test = [&solution](vector<int> nums, int k) {
+    cout << "nums = { ";
+    for (int num : nums) {
+      cout << num << " ";
+    }
+    cout << "}, k = " << k << endl;
+    cout << "num of pairs divisible by k in given array = " << solution.twoSumModK(nums, k) << endl << endl;
+  };
+
+  test({ -2, 1, 4 }, 0);
+  test({ -2, 1, 4 }, 1);
+  test({ -2, 1, 4 }, 2);
+
+	return 0;
+}
