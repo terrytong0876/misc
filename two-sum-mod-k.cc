@@ -52,7 +52,8 @@ int main()
       cout << num << " ";
     }
     cout << "}, k = " << k << endl;
-    cout << "num of pairs divisible by k in given array = " << solution.twoSumModK(nums, k) << endl << endl;
+    cout << "num of pairs divisible by k in given array = " 
+         << solution.twoSumModK(nums, k) << endl << endl;
   };
 
   test({ -2, 1, 4 }, 0);
