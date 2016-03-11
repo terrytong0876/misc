@@ -43,8 +43,7 @@ public:
   }
 };
 
-int main()
-{
+int main() {
   Solution solution;
   auto test = [&solution](vector<int> nums, int k) {
     cout << "nums = { ";
