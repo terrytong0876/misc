@@ -1,6 +1,8 @@
 #include <list>
 #include <stack>
 #include <iostream>
+#include <stdexcept>
+#include <limits>
 using namespace std;
 
 struct NaryTreeNode {
