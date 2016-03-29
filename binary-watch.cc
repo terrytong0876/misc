@@ -1,37 +1,6 @@
 #include <vector>
-#include <algorithm>
-#include <unordered_map>
-#include <unordered_set>
 #include <iostream>
-#include <set>
-#include <functional>
-#include <cstdlib>
-#include <stack>
-#include <cctype>
-#include <string>
-#include <iostream>
-#include <sstream>
-#include <queue>
-#include <memory>
-#include <unordered_map>
-#include <unordered_set>
-#include <iostream>
-#include <cmath>
-#include <cassert>
-#include <algorithm>
-#include <iostream>
-#include <unordered_map>
-#include <unordered_set>
-#include <vector>
-#include <map>
-#include <ctime>
-#include <mutex>
-#include <set>
-#include <thread>
-#include <iostream>
-#include <memory>
-#include <vector>
-#include <list>
+#include <limits>
 using namespace std;
 
 class Solution {
