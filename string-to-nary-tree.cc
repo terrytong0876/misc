@@ -33,6 +33,10 @@ public:
                 tokenStack.emplace(token, level);
             } else if (token == ']') {
                 --level;
+                if (!tokenStack.empty() && tokenStack.top().first == '[') {
+                    tokenStack.pop();  // []
+                    continue;
+                }
                 if (tokenStack.empty() || tokenStack.top().first == '[') {
                     throw runtime_error("invalid input");
                 }
@@ -80,7 +84,7 @@ void print(NaryTreeNode* root) {
 
 void test() {
     Solution solution;
-    auto root = solution.build("[A[B[E][F[X[Y][Z]]][G]][C][D]]");
+    auto root = solution.build("[A[B[E][F[X[Y][Z]]][G]][C][D][]]");
     print(root);
     delete root;
 }
