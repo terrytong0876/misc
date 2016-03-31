@@ -57,8 +57,6 @@ public:
 
         if (tokenStack.empty() && nodeStack.size() == 1) {
             return nodeStack.top().first;
-        } else {
-            throw runtime_error("invalid input");
         }
         return nullptr;
     }
