@@ -9,7 +9,7 @@ class Board {
     unordered_map<int, int> hashmap;  // (id, score)
 public:
     int addUser(int id, int score) {
-        if (hashmap.find(id) != hashmap.end()) {
+        if (hashmap.count(id) != 0) {
             int oldScore = hashmap[id];
             multiset.erase(multiset.find(make_pair(oldScore, id)));
         }
@@ -34,7 +34,7 @@ public:
 void test() {
     Board board;
     cout << board.addUser(1, 100) << endl;
-    cout << board.addUser(1, 50) << endl;
+    cout << board.addUser(1, 89) << endl;
     cout << board.addUser(3, 98) << endl;
     cout << board.findByRank(2) << endl;
 }
