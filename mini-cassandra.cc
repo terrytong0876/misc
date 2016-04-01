@@ -39,8 +39,8 @@ public:
         vector<Column> result;
         auto begin = data.at(raw_key).lower_bound(column_start);
         auto end = data.at(raw_key).upper_bound(column_end);
-        for (auto itor = begin; itor != end; ++itor) {
-            result.emplace_back(itor->first, itor->second);
+        for (; begin != end; ++begin) {
+            result.emplace_back(begin->first, begin->second);
         }
         return result;
     }
