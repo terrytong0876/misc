@@ -33,10 +33,10 @@ public:
 
 void test() {
     Board board;
-    cout << board.addUser(1, 100);
-    cout << board.addUser(1, 50);
-    cout << board.addUser(3, 98);
-    cout << board.findByRank(2);
+    cout << board.addUser(1, 100) << endl;
+    cout << board.addUser(1, 50) << endl;
+    cout << board.addUser(3, 98) << endl;
+    cout << board.findByRank(2) << endl;
 }
 
 int main() {
