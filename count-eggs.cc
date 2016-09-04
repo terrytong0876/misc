@@ -12,10 +12,10 @@ public:
             }
         }
     }
-
+    
     bool isValid(int num) {
         return num % 1 == 0 && num % 2 == 1 && num % 4 == 1 && 
-            num % 5 == 3 && num % 6 == 3 && num % 8 == 1 && 
+            num % 5 == 4 && num % 6 == 3 && num % 8 == 1 && 
             num % 3 == 0 && num % 7 == 0 && num % 9 == 0;
     }
 };
